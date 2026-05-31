@@ -1,14 +1,11 @@
 /* Multiple Style */
 
 header h1,footer ul li,footer p,a{
-    border: 2px solid rgb(164, 140, 0);
+    border: 2px solid;
     padding: 5px;
     border-radius: 8px;
-    background-color: black;
-    color: rgb(164, 140, 0);
     margin: 5px;
 }
-
 
 /* HEADER */
 
@@ -45,6 +42,7 @@ header nav ul li a{
     justify-content: space-evenly;
     white-space: nowrap;
 }
+
 header #light-dark{
     position: absolute;
     height: 50px;
@@ -63,10 +61,13 @@ main{
     background-color: rgb(81, 81, 81);
 }
 
+.sections{
+    width: 50%;
+}
+
 section{
     scroll-margin-top: 100px;
     padding-top: 50px ;
-    width: 50%;
     padding-left: 30px;
     padding-bottom: 30px;
     width: auto;
@@ -88,3 +89,4 @@ footer ul{
     display: flex;
     justify-content: space-evenly;
 }
+

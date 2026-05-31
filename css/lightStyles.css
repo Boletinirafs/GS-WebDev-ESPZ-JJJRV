@@ -1,21 +1,44 @@
-/* HEADER and FOOTER*/
+/* HEADER and FOOTER */
+
+header h1,footer ul li,footer p,a{
+    border-color: #000C0C;
+    color:#000C0C ;
+    box-shadow: 0 0 3px;
+    background-color: #ACEDED;
+}
 
 header,footer{
-    background-color:#c7c7c7;
+    background-color:#ACEDED; 
+}
+
+header{
+    border-bottom:solid #000C0C 5px;;
+}
+footer{
+    border-top: solid #000C0C 5px;;
 }
 
 header #light-dark{
-    border: solid black 3px;
+    border: solid #000C0C 3px;
+    background-color:aliceblue;
 }
 
-/* MAIN */
 
+/* MAIN */
 main{
-    background-color: rgb(81, 81, 81);
+    background-color: #2E9C9C;
+}
+
+.sections{
+    background-color: #ACEDED;
+    border-right: solid #000C0C 5px;
+    border-left: solid #000C0C 5px;
 }
 
 section{
-    background-color: #ffffff;
+    border-bottom: 3px solid #000C0C;
 }
 
-
+p,h2{
+   color: #000C0C;
+}

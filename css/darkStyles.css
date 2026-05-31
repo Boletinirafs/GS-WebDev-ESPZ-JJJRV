@@ -1,21 +1,46 @@
 /* HEADER and FOOTER */
 
+header h1,footer ul li,footer p,a{
+    border-color: #006565;
+    color:#006565 ;
+    box-shadow: 0 0 3px;
+    background-color: #001919;
+}
+
 header,footer{
-    background-color:#423c3c; 
+    background-color:#001919; 
+}
+
+header{
+    border-bottom:solid #006565 5px;;
+}
+footer{
+    border-top: solid #006565 5px;;
 }
 
 header #light-dark{
-    border: solid black 3px;
+    border: solid #006565 3px;
+    background-color:aliceblue;
 }
 
-/* MAIN */
 
+/* MAIN */
 main{
-    background-color: rgb(54, 51, 51);
+    background-color: #112525;
+}
+
+.sections{
+    background-color: #001919;
+    border-right: solid #006565 5px;
+    border-left: solid #006565 5px;
 }
 
 section{
-    background-color: #585555;
+    border-bottom: 3px solid #006565;
+}
+
+p,h2{
+   color: #006565;
 }
 
 
