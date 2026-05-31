@@ -1,0 +1,22 @@
+/* HEADER and FOOTER */
+
+header,footer{
+    background-color:#423c3c; 
+}
+
+header #light-dark{
+    border: solid black 3px;
+}
+
+/* MAIN */
+
+main{
+    background-color: rgb(54, 51, 51);
+}
+
+section{
+    background-color: #585555;
+}
+
+
+

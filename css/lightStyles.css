@@ -1,0 +1,21 @@
+/* HEADER and FOOTER*/
+
+header,footer{
+    background-color:#c7c7c7;
+}
+
+header #light-dark{
+    border: solid black 3px;
+}
+
+/* MAIN */
+
+main{
+    background-color: rgb(81, 81, 81);
+}
+
+section{
+    background-color: #ffffff;
+}
+
+
