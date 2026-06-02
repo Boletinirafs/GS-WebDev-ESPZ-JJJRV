@@ -183,6 +183,11 @@ section p {
     background: linear-gradient(90deg, var(--brilho), transparent);
     border-radius: 1px;
 }
+.quiz{
+    margin-bottom: 50px;
+}
+
+
 /* FOOTER */
 
 footer{

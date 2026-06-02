@@ -1,4 +1,4 @@
-
+// DARK AND LIGHT MODE SWITCH
 //Modifica os temas da página
 const lightModes = document.getElementById('light-dark')//Seleciona o ID dos modos
 lightModes.addEventListener('click',()=>{//Espera o click para dar o callback
@@ -24,21 +24,21 @@ lightModes.addEventListener('click',()=>{//Espera o click para dar o callback
 // DARK AND LIGHT MODE SWITCH
 
 //SECTION VISIBILITY
-
-const links = document.querySelectorAll('a')
-const sections = document.querySelectorAll('section')
+//Mostra em qual section o usuario está
+const links = document.querySelectorAll('a') //Seleciona todos os links anchor
+const sections = document.querySelectorAll('.sections section')// Seleciona todas as section
 
 const observer = new IntersectionObserver(entries =>{
     entries.forEach(entry =>{
-            if (!entry.isIntersecting){
+            if (!entry.isIntersecting){//Se a section não mudar, ignora
                 return
             }
         
-        const entrySelect = entry.target.id
+        const entrySelect = entry.target.id //seleciona o id de cada section
 
         links.forEach(link =>{
-            if (link.getAttribute('href')==`#${entrySelect}`){
-                link.classList.add('active')
+            if (link.getAttribute('href')==`#${entrySelect}`){ 
+                link.classList.add('active')//deixa apenas o ID correspondente habilitado
             }else{
                 link.classList.remove('active')
             }
@@ -46,9 +46,16 @@ const observer = new IntersectionObserver(entries =>{
     })
 },{
     root: null,
-    rootMargin: "-30% 0px -70% 0px",
+    rootMargin: "-30% 0px -70% 0px", //onde e como o observador vai observar
     threshold: 0
 })
-sections.forEach(section=>observer.observe(section))
+sections.forEach(section=>observer.observe(section))//verifica cada section com o .observe()
 
 //SECTION VISIBILITY
+
+//QUIZ
+
+
+
+//QUIZ
+
