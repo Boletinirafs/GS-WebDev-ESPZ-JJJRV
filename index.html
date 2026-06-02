@@ -20,7 +20,7 @@
                 <li><a href="#publico-alvo">Público-alvo</a></li>
                 <li><a href="#beneficios">Benefícios</a></li>
                 <li><a href="#aplicacao">Aplicação</a></li>
-                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#quizSection">Quiz</a></li>
             </ul>
         </nav>
         <img id='light-dark' src="images/light-dark/galaxyMode.svg" alt="galaxyMode">
@@ -89,177 +89,180 @@
                     </p>
                 </div>
             </section>
-            <section id="quiz">
-                <form action="">
+            <section id="quizSection">
+                <form id="quiz">
                     <h2>TESTE SEU CONHECIMENTO SOBRE O ESPAÇO:</h2>
                     <br>
-                    <fieldset id="question1">
+                    <fieldset data-resposta="a">
                         <legend>Qual o formato da Terra?</legend>
                         <div>
                             <label>
-                                <input type="radio" name="q1" value="geoide">
+                                <input type="radio" name="q1" value="a">
                                 Geoide
                             </label>
                         </div>
                         <div>
-                            <label for="esfera">
-                                <input type="radio" name="q1" value="esfera">
+                            <label>
+                                <input type="radio" name="q1" value="b">
                             Esfera</label>
                         </div>
                     </fieldset>
                     <br>
-                    <fieldset id="question2">
+                    <fieldset data-resposta="a">
                         <legend>Qual a velocidade da luz?</legend>
                         <div>
                             <label>
-                                <input type="radio" name="q2" value="300milhoes">
+                                <input type="radio" name="q2" value="a">
                                 300.000.000 m/s
+                                <span class="customOption"></span>
                             </label>
                         </div>
                         <div>
-                            <label for="esfera">
-                                <input type="radio" name="q2" value="300mil">
+                            <label>
+                                <input type="radio" name="q2" value="b">
                                 300.000 m/s
                             </label>
                         </div>
                     </fieldset>
                     <br>
-                    <fieldset id="question3">
+                    <fieldset data-resposta="b">
                         <legend>Qual a posição da Terra no sistema solar?</legend>
                         <div>
                             <label>
-                                <input type="radio" name="q3" value="quinta">
+                                <input type="radio" name="q3" value="a">
                                 Quinta
                             </label>
                         </div>
                         <div>
-                            <label for="esfera">
-                                <input type="radio" name="q3" value="terceira">
+                            <label>
+                                <input type="radio" name="q3" value="b">
                                 Terceira
                             </label>
                         </div>
                     </fieldset>
                     <br>
-                    <fieldset id="question4">
+                    <fieldset data-resposta="b">
                         <legend>Qual a posição da Terra no sistema solar?</legend>
                         <div>
                             <label>
-                                <input type="radio" name="q4" value="saturno">
+                                <input type="radio" name="q4" value="sa">
                                 Saturno
                             </label>
                         </div>
                         <div>
-                            <label for="esfera">
-                                <input type="radio" name="q4" value="jupiter">
+                            <label>
+                                <input type="radio" name="q4" value="b">
                                 Júpiter
                             </label>
                         </div>
                     </fieldset>
                     <br>
-                    <fieldset id="question5">
+                    <fieldset data-resposta="a">
                         <legend>Qual a galáxia espiral mais próxima?</legend>
                         <div>
                             <label>
-                                <input type="radio" name="q5" value="andromeda">
+                                <input type="radio" name="q5" value="a">
                                 Andromeda
                             </label>
                         </div>
                         <div>
                             <label>
-                                <input type="radio" name="q5" value="antena">
+                                <input type="radio" name="q5" value="b">
                                 Antena
                             </label>
                         </div>
                     </fieldset>
                     <br>
 
-                    <fieldset id="question6">
+                    <fieldset data-resposta="b">
                         <legend>Qual o nome do primeiro ser vivo a sair da Terra?</legend>
                         <div>
                             <label>
-                                <input type="radio" name="q6" value="dolly">
+                                <input type="radio" name="q6" value="a">
                                 Dolly
                             </label>
                         </div>
                         <div>
                             <label>
-                                <input type="radio" name="q6" value="laika">
+                                <input type="radio" name="q6" value="b">
                                 Laika
                             </label>
                         </div>
                     </fieldset>
                     <br>
 
-                    <fieldset id="question7">
+                    <fieldset data-resposta="a">
                         <legend>Como se chama uma explosão de uma estrela?</legend>
                         <div>
                             <label>
-                                <input type="radio" name="q7" value="supernova">
+                                <input type="radio" name="q7" value="a">
                                 Supernova
                             </label>
                         </div>
                         <div>
                             <label>
-                                <input type="radio" name="q7" value="bigbang">
+                                <input type="radio" name="q7" value="b">
                                 Big-Bang
                             </label>
                         </div>
                     </fieldset>
                     <br>
 
-                    <fieldset id="question8">
+                    <fieldset data-resposta="b">
                         <legend>Qual a cor do Sol?</legend>
                         <div>
                             <label>
-                                <input type="radio" name="q8" value="amarelo">
+                                <input type="radio" name="q8" value="a">
                                 Amarelo
                             </label>
                         </div>
                         <div>
                             <label>
-                                <input type="radio" name="q8" value="branco">
+                                <input type="radio" name="q8" value="b">
                                 Branco
                             </label>
                         </div>
                     </fieldset>
                     <br>
 
-                    <fieldset id="question9">
+                    <fieldset data-resposta="b">
                         <legend>Qual o formato da tragetória da órbita dos planetas?</legend>
                         <div>
                             <label>
-                                <input type="radio" name="q9" value="circunferencia">
+                                <input type="radio" name="q9" value="a">
                                 Circunferência
                             </label>
                         </div>
                         <div>
                             <label>
-                                <input type="radio" name="q9" value="elipse">
+                                <input type="radio" name="q9" value="b">
                                 Elipse
                             </label>
                         </div>
                     </fieldset>
                     <br>
 
-                    <fieldset id="question10">
+                    <fieldset data-resposta="a">
                         <legend>Qual cor indica uma estrela mais quente?</legend>
                         <div>
                             <label>
-                                <input type="radio" name="q10" value="azul">
+                                <input type="radio" name="q10" value="a">
                                 Azul
                             </label>
                         </div>
                         <div>
                             <label>
-                                <input type="radio" name="q10" value="vermelho">
+                                <input type="radio" name="q10" value="b">
                                 Vermelho
                             </label>
                         </div>
                     </fieldset>
                     <br>
-                    <button>
+                    <button type="submit">
                         <label>Enviar resultados</label>
                     </button>
+                    
+                    <h2 id="resultado"></h2>
                 </form>
             </section>
         </div>

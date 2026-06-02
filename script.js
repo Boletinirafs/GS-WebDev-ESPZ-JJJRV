@@ -50,12 +50,31 @@ const observer = new IntersectionObserver(entries =>{
     threshold: 0
 })
 sections.forEach(section=>observer.observe(section))//verifica cada section com o .observe()
-
 //SECTION VISIBILITY
 
 //QUIZ
+//Faz o Quiz funcionar
+const form = document.getElementById('quiz') //Seleciona o formulário
+const result = document.getElementById('resultado')//Seleciona o campo de resultado 
 
+form.addEventListener('submit',(standard)=>{//Espera a submissão do formulário para iniciar o callback
+    standard.preventDefault()//Impede a página de recarregar
 
+    const questions = document.querySelectorAll('fieldset')//Seleciona todas as questões 
+    let grade = 0
 
+    questions.forEach(answer =>{//Para cada fieldset/questão
+
+        const correct = answer.dataset.resposta //Seleciona o atributo 'data' do fieldset
+        const checkedAnswer = answer.querySelector("input[type='radio']:checked")//Seleciona a opção marcada
+        
+        if(checkedAnswer && checkedAnswer.value == correct){//Se não houver opção marcada, ou errado ele não aceita o valor.
+            grade++ //Essa chave lógica depende de dois trues, já que se fosse apenas a opção correta ele
+        }           //tentaria acessar o valor de null, o que da erro e quebra o codigo
+    })
+
+    result.textContent = `Resultado ${grade}`
+
+})
 //QUIZ
 
