@@ -52,6 +52,69 @@ const observer = new IntersectionObserver(entries =>{
 sections.forEach(section=>observer.observe(section))//verifica cada section com o .observe()
 //SECTION VISIBILITY
 
+//SLIDESHOW
+
+const slideshowImages = {
+    'img1': '/images/slideshow/slideshow1.jpg',
+    'img2': '/images/slideshow/slideshow2.webp',//endereço das imgs
+    'img3': '/images/slideshow/slideshow3.jpg'
+}
+    
+const nextImg = document.querySelector('#proximo')
+const lastImg = document.querySelector('#anterior')//seleciona os ids dos elementos
+const counter = document.querySelector('#contador')
+
+nextImg.addEventListener('click',()=>{//evento de click
+
+    const slideBox = document.querySelector('.slide img') //seleciona a imagem atual
+    const currentImage = slideBox.getAttribute('alt') //pega o valor de alt da imagem atual
+
+    switch (currentImage){//encontra o comando da imagem atual e finaliza
+        case 'img1':
+            slideBox.setAttribute('src',`${slideshowImages['img2']}`)
+            slideBox.setAttribute('alt','img2')
+            counter.textContent = '2 / 3'
+            break
+        case 'img2':
+            slideBox.setAttribute('src',`${slideshowImages['img3']}`)
+            slideBox.setAttribute('alt','img3')
+            counter.textContent = '3 / 3'
+            break
+        default:
+            slideBox.setAttribute('src',`${slideshowImages['img1']}`)
+            slideBox.setAttribute('alt','img1')
+            counter.textContent = '1 / 3'
+            break
+        }    
+})
+
+//Igual só que ao contrário
+lastImg.addEventListener('click',()=>{
+
+    const slideBox = document.querySelector('.slide img')
+    const currentImage = slideBox.getAttribute('alt')
+
+    switch (currentImage){
+        case 'img1':
+            slideBox.setAttribute('src',`${slideshowImages['img3']}`)
+            slideBox.setAttribute('alt','img3')
+            counter.textContent = '3 / 3'
+            break
+        case 'img2':
+            slideBox.setAttribute('src',`${slideshowImages['img1']}`)
+            slideBox.setAttribute('alt','img1')
+            counter.textContent = '1 / 3'
+            break
+        default:
+            slideBox.setAttribute('src',`${slideshowImages['img2']}`)
+            slideBox.setAttribute('alt','img2')
+            counter.textContent = '2 / 3'
+            break
+        }    
+})
+
+//SLIDESHOW
+
 //QUIZ
 //Faz o Quiz funcionar
 const form = document.getElementById('quiz') //Seleciona o formulário
